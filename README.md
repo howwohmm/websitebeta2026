@@ -1,11 +1,25 @@
 
-  # website v3
+# website v3
 
-  This is a code bundle for website v3. The original project is available at https://www.figma.com/design/S8f9KlgSmcKMFTjggpZ10D/website-v3.
+This repository now contains a fully self-contained Vite + React build of the site—no Figma-generated dependencies or shared UI libraries remain.
 
-  ## Running the code
+## Local development
 
-  Run `npm i` to install the dependencies.
+1. `npm install`
+2. `npm run dev`
+3. Visit the printed URL (default `http://localhost:5173`)
 
-  Run `npm run dev` to start the development server.
+## Production build preview
+
+1. `npm run build`
+2. `npm run preview` to run the static output locally before pushing to GitHub or deploying.
+
+## Deploying on Vercel
+
+1. Push the repo to GitHub (or import it directly in Vercel).
+2. In Vercel, create a new project from this repo.
+3. Framework preset: **Vite**.  
+   - Build command: `npm run build`  
+   - Output directory: `dist`
+4. Deploy. Vercel will automatically rebuild on future pushes to the selected branch.
   
